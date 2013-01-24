@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/visual-editor-font-size/
 Description: Allows you to change the font size of the visual editor
 Author: Nikolay Bachiyski
 Author URI: http://nikolay.bg/
-Version: 0.1
+Version: 0.2
 */
 
 class WriteFieldFontSize {

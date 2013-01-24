@@ -47,7 +47,7 @@ class WriteFieldFontSize {
 			<script type="text/javascript">
 				jQuery(function($) {
 					var change_size = function(elem, percent) {
-						var new_size;
+						var new_size = '13px';
 						if (!elem.length) {
 							alert('Setting the font size works only when the visual editor is active.');
 							return;
@@ -56,8 +56,6 @@ class WriteFieldFontSize {
 							var current_size = elem.css('font-size');
 							var size_and_quantity = current_size.match(/^[\d.]+(.*)$/);
 							new_size = (parseFloat(size_and_quantity[0]) * (1 + (percent/100))).toString() + size_and_quantity[1];
-						} else {
-							new_size = '13px';
 						}
 						elem.css('font-size', new_size);
 						$('#visual-editor-font-size-sample').css('font-size', new_size);

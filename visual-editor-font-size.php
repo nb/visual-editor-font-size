@@ -48,6 +48,10 @@ class WriteFieldFontSize {
 				jQuery(function($) {
 					var change_size = function(elem, percent) {
 						var new_size;
+						if (!elem.length) {
+							alert('Setting the font size works only when the visual editor is active.');
+							return;
+						}
 						if (percent != 0) {
 							var current_size = elem.css('font-size');
 							var size_and_quantity = current_size.match(/^[\d.]+(.*)$/);
